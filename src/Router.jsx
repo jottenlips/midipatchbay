@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 import { useMIDI } from "react-use-midi/lib";
 
 export const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <ul>
           <li>
@@ -25,7 +25,7 @@ export const Router = () => {
           </Route>
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
